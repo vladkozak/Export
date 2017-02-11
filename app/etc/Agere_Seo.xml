@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Agere_Seo>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+                <Agere_Base />
+            </depends>
+		</Agere_Seo>
+	</modules>
+</config>

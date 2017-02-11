@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <modules>
+        <Agere_Export>
+            <version>0.0.1</version>
+        </Agere_Export>
+    </modules>
+
+    <frontend>
+        <routers>
+            <export>
+                <use>standard</use>
+                <args>
+                    <module>Agere_Export</module>
+                    <frontName>export</frontName>
+                </args>
+            </export>
+        </routers>
+    </frontend>
+
+    <global>
+        <helpers>
+            <export>
+                <class>Agere_Export_Helper</class>
+            </export>
+        </helpers>
+        <models>
+            <export>
+                <class>Agere_Export_Model</class>
+            </export>
+        </models>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <export_gold>
+                                            <title>Export</title>
+                                        </export_gold>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <crontab>
+        <jobs>
+            <export_job>
+                <schedule>
+                    <config_path>export/settings/frequency</config_path>
+                </schedule>
+                <run>
+                    <model>export/observer::run</model>
+                </run>
+            </export_job>
+        </jobs>
+    </crontab>
+</config>

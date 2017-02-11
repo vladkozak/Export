@@ -1,0 +1,105 @@
+<config>
+    <sections>
+        <expor translate="label">
+            <label>Export Gold</label>
+            <tab>agere</tab>
+            <frontend_type></frontend_type>
+            <sort_order>910</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <gold_settings translate="label">
+                    <label>Settings Gold</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <frequency translate="label">
+                            <label>Generate Frequency</label>
+                            <comment>cron format: minute hour day month year</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </frequency>
+                        <path_to_file_import translate="label">
+                            <label>Path to file import</label>
+                            <comment>Example: "/var/gold.ua/ex.xlsx"</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </path_to_file_import>
+                        <path_to_file_export translate="label">
+                            <label>Path to file export</label>
+                            <comment>Example: "/var/gold.ua/ex2.xlsx"</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </path_to_file_export>
+                        <sku translate="label">
+                            <label>Please enter field where is SKU</label>
+                            <comment>Example: "1"</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sku>
+                    </fields>
+                </gold_settings>
+                <zlato_settings translate="label">
+                    <label>Settings Zlato</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <frequency translate="label">
+                            <label>Generate Frequency</label>
+                            <comment>cron format: minute hour day month year</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </frequency>
+                        <path_to_file_import translate="label">
+                            <label>Path to file import</label>
+                            <comment>Example: "/var/gold.ua/ex.xlsx"</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </path_to_file_import>
+                        <path_to_file_export translate="label">
+                            <label>Path to file export</label>
+                            <comment>Example: "/var/gold.ua/ex2.xlsx"</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </path_to_file_export>
+                        <sku translate="label">
+                            <label>Please enter field where is SKU</label>
+                            <comment>Example: "1"</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sku>
+                    </fields>
+                </zlato_settings>
+            </groups>
+        </expor>
+    </sections>
+</config>
